@@ -5,10 +5,10 @@ study guide for the Docker Certified Associate exam
 https://success.docker.com/certification
 
 ## Learning Resources
-- 
+- [Docker Deep Dive ebook on Leanpub](https://leanpub.com/dockerdeepdive)
+- [Docker Deep Dive elearning on Pluralsight](https://app.pluralsight.com/library/courses/docker-deep-dive-update/table-of-contents)
 
 ## Subjects
-- [Chef Basic Terminology](Chef-Basic-Terminology/README.md)
 
 |Name of Domain                            | % of Exam |
 | -------------                            |-----      |
