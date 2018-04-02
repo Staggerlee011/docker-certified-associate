@@ -2,7 +2,10 @@
 
 ## Describe Dockerfile options [add, copy, volumes, expose, entrypoint, etc)
 
+[dockerfile options](dockerfile-options.md)
+
 ## Show the main parts of a Dockerfile
+
 ## Give examples on how to create an efficient image via a Dockerfile
 
 ## Use CLI commands such as list, delete, prune, rmi, etc to manage images
@@ -18,6 +21,7 @@
 ## Apply a file to create a Docker image
 
 ## Modify an image to a single layer
+
 ## Describe how image layers work
 
 ## Deploy a registry (not architect)

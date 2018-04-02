@@ -44,7 +44,7 @@ Sets environment variables within the container, useful for setting vars within 
     `
 
 ## EXPOSE
-Defines if you expose a port to connect to the container
+Publishes a port to external systems
 
     `
     EXPOSE 8080
