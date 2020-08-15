@@ -1,12 +1,17 @@
 # docker-certified-associate
-study guide for the Docker Certified Associate exam
+
+Study guide for the Docker Certified Associate exam
 
 ## Exam Details
+
 https://success.docker.com/certification
 
 ## Learning Resources
+
 - [Docker Deep Dive ebook on Leanpub](https://leanpub.com/dockerdeepdive)
 - [Docker Deep Dive elearning on Pluralsight](https://app.pluralsight.com/library/courses/docker-deep-dive-update/table-of-contents)
+- [Docker in a month of lunches on Manning](https://www.manning.com/books/learn-docker-in-a-month-of-lunches)
+- [Bret Fisher Docker Mastery: with Kubernetes +Swarm from a Docker Captain Udemy](https://www.udemy.com/course/docker-mastery/)
 
 ## Subjects
 
