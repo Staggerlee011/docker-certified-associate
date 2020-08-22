@@ -1,15 +1,29 @@
-# ​Storage​ ​and​ ​Volumes​ ​
+# Domain 6: Storage and Volumes (10% of exam)
 
-## State which graph driver should be used on which OS
+Content may include the following:
 
-## Demonstrate how to configure devicemapper
+## Identify the correct graph drivers to uses with various operating systems
 
-## Compare object storage to block storage, and explain which one is preferable when available
+- [storage driver](storage-driver.md)
 
-## Summarize how an application is composed of layers and where those layers reside on the filesystem
+## Describe and demonstrate how to configure devicemapper
 
-## Describe how volumes are used with Docker for persistent storage
+- [storage driver](storage-driver.md)
 
-## Identify the steps you would take to clean up unused images on a filesystem, also on DTR
+## Compare and contrast object and block storage and when they should be used
 
-## Demonstrate how storage can be used across cluster nodes
+- [storage driver](storage-driver.md)
+
+## Describe how an application is composed of layers and where these layers reside on the filesystem
+
+## Describe the use of volumes are used with Docker for persistent storage
+
+- [docker storage](docker-storage.md)
+
+## Identify the steps to take to clean up unused images on a filesystem and DTR
+
+## Describe and demonstrate how storage can be used across cluster nodes
+
+## Describe how to provision persistent storage to a Kubernetes pod using persistentVolumes
+
+## Describe the relationship between container storage interface drivers, storageClass, persistentVolumeClaim and volume objects in Kubernetes

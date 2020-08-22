@@ -1,25 +1,31 @@
-# ​Installation​ ​and​ ​Configuration​ ​
+# Domain 3: Installation and Configuration (15% of exam)
 
-## Demonstrate the ability to upgrade the Docker engine
+Content may include the following:
 
-## Complete setup of repo, select a storage driver, and complete installation of Docker engine on multiple platforms
+## Describe sizing requirements for installation
 
-## Configure logging drivers (splunk, journald, etc)
+## Describe and demonstrate the setup of repo, selection of a storage driver, and installation of the Docker engine on multiple platforms
 
-## Setup swarm, configure managers, add nodes, and setup backup schedule
+## Describe and demonstrate configuration of logging drivers (splunk, journald, etc.)
 
-## Create and manager user and teams
+## Describe and demonstrate how to set up swarm, configure managers, add nodes, and setup the backup schedule
 
-## Interpret errors to troubleshoot installation issues without assistance
+## Describe and demonstrate how to create and manage user and teams
 
-## Outline the sizing requirements prior to installation
+## Describe and demonstrate how to configure the Docker daemon to start on boot
 
-## Understand namespaces, cgroups, and configuration of certificates
+## Describe and demonstrate how to use certificate-based client-server authentication to ensure a Docker daemon has the rights to access images on a registry
 
-## Use certificate-based client-server authentication to ensure a Docker daemon has the rights to access images on a registry
+## Describe the use of namespaces, cgroups, and certificate configuration
 
-## Consistently repeat steps to deploy Docker engine, UCP, and DTR on AWS and on premises in an HA config
+- [linux](linux.md)
 
-## Complete configuration of backups for UCP and DTR
+## Describe and interpret errors to troubleshoot installation issues without assistance
 
-## Configure the Docker daemon to start on boot
+## Describe and demonstrate the steps to deploy the Docker engine, UCP, and DTR on AWS and on-premises in an HA configuration
+
+- [ucp](ucp.md)
+
+## Describe and demonstrate how to configure backups for UCP and DTR
+
+- [ucp](ucp.md)

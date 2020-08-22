@@ -1,25 +1,32 @@
-# Security​ ​
+# Domain 5: Security (15% of exam)
+
+Content may include the following:
+
+## Describe security administration and tasks
 
 ## Describe the process of signing an image
 
-## Demonstrate that an image passes a security scan
-
-## Enable Docker Content Trust
-
-## Configure RBAC in UCP
-
-## Integrate UCP with LDAP/AD
-
-## Demonstrate creation of UCP client bundles
-
 ## Describe default engine security
+
+- [link](engine-sec.md)
 
 ## Describe swarm default security
 
 ## Describe MTLS
 
-## Identity roles
+## Describe identity roles
 
-## Describe the difference between UCP workers and managers
+## Compare and contrast UCP workers and managers
 
-## Describe process to use external certificates with UCP and DTR
+## Describe the process to use external certificates with UCP and DTR
+
+## Describe and demonstrate that an image passes a security scan
+
+## Describe and demonstrate how to enable Docker Content Trust
+
+## Describe and demonstrate how to configure RBAC with UCP
+
+## Describe and demonstrate how to integrate UCP with LDAP/AD
+
+## Describe and demonstrate how to create UCP client bundles
+

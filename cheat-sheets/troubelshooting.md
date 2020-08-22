@@ -24,6 +24,12 @@ docker container logs 88
 
 - 88 = the first 2 lettrs of the containerId (needs to be unique)
 
+view logs of container using container name
+
+``` posh
+docker container logs my-container
+```
+
 ## inspect
 
 view details of the container

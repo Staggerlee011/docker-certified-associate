@@ -1,13 +1,15 @@
-# Describe Dockerfile options [add, copy, volumes, expose, entrypoint, etc)
+# Describe options, such as add, copy, volumes, expose, entry point
 
 Below are the building blocks for creating a dockerfile. 
 
 ## Comments
+
 comments are written using `#`
 
 `# This is a comment`
 
 ## FROM
+
 Starting point for a dockerfile, used to pull from other images.
 
 You can either use:
@@ -23,6 +25,7 @@ Which will bring a specific verison (This is prefered method in production! as l
 ## ADD
 
 ## COPY
+
 Copies a file or files during thje build
 
 `COPY . /src`
@@ -30,16 +33,19 @@ Copies a file or files during thje build
 copies everything in the current folder to the src folder in the docker image
 
 ## ENV
+
 Sets environment variables within the container, useful for setting vars within the container that applicaitons will need
 
 `ENV`
 
 ## EXPOSE
+
 Publishes a port to external systems
 
 `EXPOSE 8080`
 
 ## LABEL
+
 simple metadata option to add reference and detail to your image
 
 `LABEL maintainer="stebennettsjb@gmail.com"
@@ -55,19 +61,23 @@ you can alsohave multiple labels on a single row (Used to save space but doesnt 
 ## USER
 
 ## VOLUME
+
 Exposes a path to the file system outside of the container, This can be used for example to do a restore of database
 
 `VOLUME`
 
 ## WORKDIR
+
 Defines the working directory to use, normally used in conjuntion with run to ensure you are in the correct directory for the exe
 
 ## RUN
+
 Runs command in the container
 
 `RUN apk add --update nodejs nodejs-npm`
 
 ## ENTRYPOINT
+
 Defines what application in the container are open to use
 
 `ENTRYPOINT ["node", "./app.js"]`

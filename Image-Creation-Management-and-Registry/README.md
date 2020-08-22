@@ -1,55 +1,47 @@
-# ​Image​ ​Creation,​ ​Management,​ ​and​ ​Registry
+# Domain 2: Image Creation, Management, and Registry (20% of exam)
 
-## Describe Dockerfile options [add, copy, volumes, expose, entrypoint, etc)
+Content may include the following:
 
-[dockerfile options](dockerfile-options.md)
+## Describe the use of Dockerfile
 
-## Show the main parts of a Dockerfile
+## Describe options, such as add, copy, volumes, expose, entry point
 
-## Give examples on how to create an efficient image via a Dockerfile
+- [link](dockerfile-options.md)
 
-## Use CLI commands such as list, delete, prune, rmi, etc to manage images
+## Identify and display the main parts of a Dockerfile
 
-## Inspect images and report specific attributes using filter and format
+- [link](dockerfile-options.md)
 
-## Demonstrate tagging an image
+## Describe and demonstrate how to create an efficient image via a Dockerfile
 
-## Utilize a registry to store an image
+## Describe and demonstrate how to use CLI commands to manage images, such as list delete, prune, rmi
 
-## Display layers of a Docker image
+## Describe and demonstrate how to inspect images and report specific attributes using filter and format
 
-## Apply a file to create a Docker image
+## Describe and demonstrate how to tag an image
 
-## Modify an image to a single layer
+## Describe and demonstrate how to apply a file to create a Docker image
 
-## Describe how image layers work
+## Describe and demonstrate how to display layers of a Docker image
 
-## Deploy a registry (not architect)
+## Describe and demonstrate how to modify an image to a single layer
 
-## Configure a registry
+## Describe and demonstrate registry functions
+
+- [link](docker-registry.md)
+
+## Deploy a registry
+
+- [link](docker-registry.md)
 
 ## Log into a registry
 
-## Utilize search in a registry
+- [link](docker-registry.md)
 
-## Tag an image
+## Utilize search in a registry
 
 ## Push an image to a registry
 
 ## Sign an image in a registry
 
-## Pull an image from a registry
-
-## Describe how image deletion works
-
-## Delete an image from a registry
-
-
-
-
-
-
-
-
-
-
+## Pull and delete images from a registry
