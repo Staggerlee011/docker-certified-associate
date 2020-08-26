@@ -26,4 +26,8 @@ Content may include the following:
 
 ## Describe how to provision persistent storage to a Kubernetes pod using persistentVolumes
 
+- [kubernetes storage](k8s-storage.md)
+
 ## Describe the relationship between container storage interface drivers, storageClass, persistentVolumeClaim and volume objects in Kubernetes
+
+- [kubernetes storage](k8s-storage.md)

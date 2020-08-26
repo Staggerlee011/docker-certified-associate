@@ -32,7 +32,7 @@ docker container run --interactive --tty alpine:latest
 - --interactive = open connection to container (stdin)
 - --tty = connect to a terminal session inside the container
 
-Run a new dos-web:latest and run a singe command then close the container
+Run a new alpine container and run a singe command then close the container
 
 ``` powershell
 echo "hello" | docker run -i alpine cat

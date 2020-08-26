@@ -4,6 +4,8 @@
 
 Docker Engine on Linux also relies on another technology called control groups (cgroups). A cgroup limits an application to a specific set of resources. Control groups allow Docker Engine to share available hardware resources to containers and optionally enforce limits and constraints. For example, you can limit the memory available to a specific container.
 
+enforce rules around usage (ie `docker run -it -m 300M` enforces memory to max of 300 megabytes)
+
 ## linux kernel namespaces
 
 Docker uses a technology called namespaces to provide the isolated workspace called the container. When you run a container, Docker creates a set of namespaces for that container.
@@ -18,9 +20,16 @@ Docker Engine uses namespaces such as the following on Linux:
 - The mnt namespace: Managing filesystem mount points (MNT: Mount).
 - The uts namespace: Isolating kernel and version identifiers. (UTS: Unix Timesharing System).
 
+### Isolating namespaces
+
+- net (network)
+- pid (process id)
+
 ### Isolate containers with a user namespace
 
 `https://docs.docker.com/engine/security/userns-remap/`
+
+
 
 ## seccomp
 
