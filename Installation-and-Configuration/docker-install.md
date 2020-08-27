@@ -89,12 +89,10 @@ docker version
 docker run hello-world
 ```
 
+## Upgrade Docker
+
+No config changes needed just rin the install of the new version. Even removing docker from a server then install again will allow for the containers that where there to come back up?!(*might wanna test that out! referenced in the LA upgrade video*)
 
 ``` c#
-
-```
-
-
-``` c#
-
+sudo apt-get install -y docker-ce=5:18.09.5~3-0~ubuntu-bionic docker-ce-cli=5:18.09.5~3-0~ubuntu-bionic
 ```
