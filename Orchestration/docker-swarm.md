@@ -1,5 +1,22 @@
 # docker swarm
 
+- [Cluster management](##Cluster-Management)
+- [Autolock](##Autolock)
+
+## Cluster-Management
+
+## Swarm managers
+
+Uses the `Raft consensus algorithm` to maintain cluster state across swarm managers
+
+### Quorum
+
+majority (more than half) of managers in the swarm. must be maintained to keep the cluster state.
+
+- Standard to have odd number of managers for quorum support
+- If we lose quorum. You cannot update any tasks or systems on the cluster.
+- spread masters across availailibty zones
+
 ## Autolock
 
 On a new clean install of docker swarm autolock is off. This means that encprytion keys used to communicate between nodes in a cluster are stored unencrypted.
@@ -68,4 +85,3 @@ to update the key to a new value
 ``` c#
 docker swarm inlock-key --rotate
 ```
-
