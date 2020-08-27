@@ -36,7 +36,11 @@ docker swarm join --token <token> <swarm manager private IP>:2377
 The output will then get an output saying the node has joined the swarm.
 
 
-## install swarm node
+## Swarm node
+
+Acts the same a worker node in k8s
+
+### install swarm node
 
 - [install docker](docker-install.md)
 
@@ -94,13 +98,13 @@ docker swarm leave
 
 standard quorum rules apply (splitbrain etc), so follow normal 3 = good 2 = bad. 
 
-## Backup and restore 
+## Backup and restore
 
 Backup and restores are only completed on `master` nodes. As the worker nodes just run the containers. 
 
-### backup 
+### backup
 
-on any manager: 
+on any manager:
 
 ``` c#
 sudo systemctl stop docker
