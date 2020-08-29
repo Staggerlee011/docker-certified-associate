@@ -90,8 +90,19 @@ docker volume prune --force
 docker volume rm todo-list
 ```
 
+## mount
 
+allows you to attach a external vlumne but to a specific location on the node storage instead of a docker managed storage location. 
 
+``` c#
+docker run --mount type=bind,source=/home/cloud_user/message,destination=/root,readonly busybox cat /root/message.txt
+```
+
+or 
+
+``` c#
+docker run --mount type=volume,source=my-volume,destination=/root busybox sh -c 'echo hello > /root/message.txt && cat /root/message.txt'
+```
 
 
 

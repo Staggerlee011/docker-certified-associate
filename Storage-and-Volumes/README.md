@@ -16,13 +16,19 @@ Content may include the following:
 
 ## Describe how an application is composed of layers and where these layers reside on the filesystem
 
+- [storage layers](storage-layers.md)
+
 ## Describe the use of volumes are used with Docker for persistent storage
 
 - [docker storage](docker-storage.md)
 
 ## Identify the steps to take to clean up unused images on a filesystem and DTR
 
+- [image cleanup](image-cleanup.md)
+
 ## Describe and demonstrate how storage can be used across cluster nodes
+
+- [swarm storage](swarm-storage.md)
 
 ## Describe how to provision persistent storage to a Kubernetes pod using persistentVolumes
 
