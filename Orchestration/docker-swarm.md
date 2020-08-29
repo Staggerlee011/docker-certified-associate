@@ -2,10 +2,11 @@
 
 - [Cluster management](##Cluster-Management)
 - [Autolock](##Autolock)
+- [labels](##labels)
 
 ## Cluster-Management
 
-## Swarm managers
+### Swarm managers
 
 Uses the `Raft consensus algorithm` to maintain cluster state across swarm managers
 
@@ -84,4 +85,45 @@ to update the key to a new value
 
 ``` c#
 docker swarm inlock-key --rotate
+```
+
+## labels
+
+- Labels help to specify objects management better. 
+
+### Add note label
+
+``` c#
+docker node update --label-add environment=production
+docker node update --label-add az=b
+```
+
+### View existing node labels
+
+``` c#
+docker node inspect
+```
+
+### --constaint
+
+Add docker swarm service task to label node
+
+``` c#
+docker service create --constraint node.labels.environment==production nginx
+```
+
+`!=` (not) also works to host on a server without a tag
+
+``` c#
+docker service create --constraint node.labels.az!=a nginx
+```
+
+### placement-pref
+
+spread=
+
+Will spread the 3 replicas evenly (as possible) across any available labels of av (ie: 1 in a, 1 in b, 1 in c)
+
+```
+docker service create --name nginx-scale --placement-pref spread=node.label.av --replicas 3 nginx
 ```

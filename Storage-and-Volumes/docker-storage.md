@@ -30,6 +30,16 @@ docker container run --name mynginx --volumes=/app nginx:latest
 docker container run -d -p 8011:80 --name mynginx -v todo-list:/data diamol/ch06-todo-list
 ```
 
+## read only
+
+you can mount the volume to be read only to the container
+
+``` c#
+docker run -v volume-name:/path/in/container:ro my/image
+```
+
+- Note the `:ro` at the end of the volume
+
 ## List Volumes
 
 list volumes in docker

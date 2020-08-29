@@ -105,6 +105,21 @@ wordpress:
       image: wordpress:latest
 ```
 
+### mounting volumes
+
+You can mount storage volumes to stacks via
+
+``` c#
+version: "3.2" # Use version 3.2 or above
+services:
+  my_service:
+    image: my:image
+    volumes:
+      - type: volume
+        source: volume-name
+        target: /path/in/container
+        read_only: true
+```
 ## docker stack commands
 
 Collection of popular commands
