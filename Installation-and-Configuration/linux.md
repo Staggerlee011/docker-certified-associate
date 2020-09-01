@@ -29,11 +29,15 @@ Docker Engine uses namespaces such as the following on Linux:
 
 `https://docs.docker.com/engine/security/userns-remap/`
 
-
-
 ## seccomp
 
+Used for filtering syscalls issued by docker
 
+## AppArmor
 
+Allows you to restrict programs capabilities with program profiles.
 
+## Capabilities
+
+performs permission checks
 

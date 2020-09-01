@@ -22,15 +22,17 @@ which will get the verison of alpine tagged with latest (Tagging with latest is 
 
 Which will bring a specific verison (This is prefered method in production! as latest could bring instability)
 
-## ADD
+## ADD-COPY
 
-## COPY
+Both commands move files into the image.
 
-Copies a file or files during thje build
+- ADD Allows you copy files from URL `ADD http://example.com/big.tar.xz /usr/src/things/`
+- ADD Allows you to extract a far file directly into the image `ADD rootfs.tar.gz /.`
 
-`COPY . /src`
-
-copies everything in the current folder to the src folder in the docker image
+``` c#
+COPY . /src
+ADD . /src
+```
 
 ## ENV
 

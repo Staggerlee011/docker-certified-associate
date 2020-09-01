@@ -28,4 +28,8 @@ Content may include the following:
 
 ## Describe how to route traffic to Kubernetes pods using ClusterIP and NodePort services
 
+- [k8s networking](k8s-networking.md)
+
 ## Describe the Kubertnetes’ container network model
+
+- [k8s networking](k8s-networking.md)
