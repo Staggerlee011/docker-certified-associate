@@ -6,13 +6,19 @@ Content may include the following:
 
 ## Describe the process of signing an image
 
+- [docker content trust](docker-content-trust.md)
+
 ## Describe default engine security
 
 - [link](engine-sec.md)
 
 ## Describe swarm default security
 
+- [docker swarm security](docker-swarm-sec.md)
+
 ## Describe MTLS
+
+- [docker swarm security](docker-swarm-sec.md)
 
 ## Describe identity roles
 
@@ -23,6 +29,8 @@ Content may include the following:
 ## Describe and demonstrate that an image passes a security scan
 
 ## Describe and demonstrate how to enable Docker Content Trust
+
+- [docker content trust](docker-content-trust.md)
 
 ## Describe and demonstrate how to configure RBAC with UCP
 
