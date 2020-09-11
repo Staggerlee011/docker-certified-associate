@@ -91,7 +91,7 @@ docker swarm inlock-key --rotate
 
 - Labels help to specify objects management better. 
 
-### Add note label
+### Add node label
 
 ``` c#
 docker node update --label-add environment=production
@@ -105,6 +105,13 @@ docker node inspect
 ```
 
 ### --constaint
+
+
+Ensure a service only runs a worker node and not a master node
+
+``` c#
+docker service create --name nginx-workers-only --constraint node.role==worker nginx
+```
 
 Add docker swarm service task to label node
 
@@ -120,10 +127,10 @@ docker service create --constraint node.labels.az!=a nginx
 
 ### placement-pref
 
-spread=
+`spread=`
 
 Will spread the 3 replicas evenly (as possible) across any available labels of av (ie: 1 in a, 1 in b, 1 in c)
 
-```
+``` c#
 docker service create --name nginx-scale --placement-pref spread=node.label.av --replicas 3 nginx
 ```

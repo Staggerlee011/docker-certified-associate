@@ -4,6 +4,8 @@ Content may include the following:
 
 ## Describe the use of Dockerfile
 
+- [link](dockerfile-options.md)
+
 ## Describe options, such as add, copy, volumes, expose, entry point
 
 - [link](dockerfile-options.md)
@@ -40,8 +42,16 @@ Content may include the following:
 
 ## Utilize search in a registry
 
+- [link](docker-registry.md)
+
 ## Push an image to a registry
+
+- [link](docker-registry.md)
 
 ## Sign an image in a registry
 
+- [link](docker-registry.md)
+
 ## Pull and delete images from a registry
+
+- [link](docker-registry.md)

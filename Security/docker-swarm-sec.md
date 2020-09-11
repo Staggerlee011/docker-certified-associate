@@ -14,5 +14,5 @@ Allows docker swarm to encrypt traffic between all swarm nodes (master and worke
 To enable a encrypted network, when creating a swarm networking add the `--opt encrypted`. This means that all containers network traffic on this network would be encrypted
 
 ``` c#
-docker netwwork create --opt encrypted --driver overlay my-secure-network
+docker network create --opt encrypted --driver overlay my-secure-network
 ```
