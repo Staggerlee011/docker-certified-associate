@@ -104,6 +104,7 @@ device mapper supports 2 modes
 ### direct-lvm
 
 - is a direct connection to real block storage
+- recommended for production
 
 #### configure direct-lvm
 

@@ -12,7 +12,7 @@ Ensures the image is signed by the creator of the image (via Notery).
 
 - It is possible for creators to DCT only certain images. It is not fixed to all images being tagged. Or fixed to a specific tag
 
-### Configure DCT
+## Configure DCT
 
 ### Client enforcement
 

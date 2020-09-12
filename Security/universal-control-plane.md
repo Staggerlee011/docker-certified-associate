@@ -1,4 +1,4 @@
-# universal control plane
+# universal control plane (UCP)
 
 An orchastration tool that sits ontop of docker ee (like istio ontop of k8s).
 

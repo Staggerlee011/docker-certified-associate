@@ -48,3 +48,33 @@ Setting this stops you from downloading any container image that does not use DC
 
 - For `docker ee` you can also configure DCT via the `deamon.json`
 - if `DOCKER_CONTENT_TRUST=0` you can download both DCT enabled and disabled images (this is the default setting)
+
+## Whitelist Insecure registry
+
+If you use a private hosted registry that uses a self-signed cert or http instead of https. this can be achived via:
+
+### Update deamon.json
+
+- `https://docs.docker.com/registry/insecure/`
+
+Files default location is:
+
+``` c#
+/etc/docker/daemon.json
+```
+
+Add the `insecure-registries` with the address of the registry you want to use
+
+``` c#
+{
+  "insecure-registries" : ["myregistrydomain.com:5000"]
+}
+```
+
+### DOCKER_OPS -insecure-registry
+
+- `https://nickjanetakis.com/blog/docker-tip-50-running-an-insecure-docker-registry`
+
+``` c#
+DOCKER_OPTS="--insecure-registry registry.example.com
+```
