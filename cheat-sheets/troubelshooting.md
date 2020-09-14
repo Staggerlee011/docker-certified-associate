@@ -57,3 +57,30 @@ shows cpu, mem, betwork, disk the container is using. Locks prompt while running
 ``` posh
 docker container stats 88
 ```
+
+## debug mode
+
+`https://docs.docker.com/config/daemon/`
+
+if you need to debug docker you can run either:
+
+``` c#
+There are two ways to configure the Docker daemon:
+
+Use a JSON configuration file. This is the preferred option, since it keeps all configurations in a single place.
+Use flags when starting dockerd.
+```
+
+### deamon.json
+
+``` c#
+{
+  "debug": true
+}
+```
+
+### dockerd
+
+``` c#
+dockerd --debug
+```

@@ -30,13 +30,6 @@ docker run -it --rm docker/dtr install \
 - go to the https://<UCP Manager private IP>
 - login with the ucp admin password
 
-### Immutability
-
-`works the same as ECR`
-
-- Default is OFF
-- Means that images can be saved to DTR and overwrite a image with the same tag
-
 ## sizing
 
 |service | min | recommended |
@@ -74,3 +67,48 @@ docker run -it --rm docker/dtr install \
 You can deploy your own certificates for the UCP / DTR web ui instead of the self signed certs from install
 
 - click System, General, then under Domain & Proxies select Show TLS settings
+
+## DTR Settings
+
+### Immutability
+
+`works the same as ECR`
+
+- Default is OFF
+- Means that images can be saved to DTR and overwrite a image with the same tag
+
+### Garbage collection
+
+`https://docs.docker.com/registry/garbage-collection/`
+
+In the context of the Docker registry, garbage collection is the process of removing blobs from the filesystem when they are no longer referenced by a manifest. Blobs can include both layers and manifests.
+
+### Whitelist Insecure registry
+
+If you use a private hosted registry that uses a self-signed cert or http instead of https. this can be achived via:
+
+#### Update deamon.json
+
+- `https://docs.docker.com/registry/insecure/`
+
+Files default location is:
+
+``` c#
+/etc/docker/daemon.json
+```
+
+Add the `insecure-registries` with the address of the registry you want to use
+
+``` c#
+{
+  "insecure-registries" : ["myregistrydomain.com:5000"]
+}
+```
+
+#### DOCKER_OPS -insecure-registry
+
+- `https://nickjanetakis.com/blog/docker-tip-50-running-an-insecure-docker-registry`
+
+``` c#
+DOCKER_OPTS="--insecure-registry registry.example.com
+```
