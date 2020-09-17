@@ -35,7 +35,7 @@ On install the docker deamon is only accessable via the UDP localhost. To enable
 
 - Create a CA
 - Create a Server and Client cert
-- Configure daemon to use tlsverifiy mode (via updating the deamon.json with values for the cert)
+- Configure daemon to use `tlsverifiy` mode (via updating the `deamon.json` with values for the cert)
 - configure the client to connect securely via the client cert
 
 ## docker run --privileged
@@ -45,12 +45,3 @@ https://medium.com/better-programming/docker-tips-mind-the-privileged-flag-d6e2a
 ``` c#
 docker run --privileged
 ```
-
-
-
-
-
-
-
-
-

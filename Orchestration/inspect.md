@@ -3,7 +3,7 @@
 returns detailed information around a docker object. In both docker CE and docker swarm.
 
 ``` c#
-docker isnpect <OBJECT>
+docker inspect <OBJECT>
 ```
 
 Works on:

@@ -24,7 +24,7 @@ Enter a passphase for your new repo:
 
 ## Upload to trusted Repository
 
-Create the image you wish to sign in the example below the build created a image called: staggerlee/mycontainer:signed
+Create the image you wish to sign in the example below the build created a image called: `myrepo/mycontainer:signed`
 
 ``` c#
 docker trust sign staggerlee/mycontainer:signed
@@ -35,7 +35,7 @@ Enter passphase (used for docker trust key gen...)
 If you have `DOCKER_CONTENT_TRUST=1` set on the build server you can also upload via the standard push command:
 
 ``` c#
-docker push staggerlee/mycontainer:signed
+docker push myrepo/mycontainer:signed
 ```
 
 ## Download only Trusted Images
@@ -48,4 +48,3 @@ Setting this stops you from downloading any container image that does not use DC
 
 - For `docker ee` you can also configure DCT via the `deamon.json`
 - if `DOCKER_CONTENT_TRUST=0` you can download both DCT enabled and disabled images (this is the default setting)
-

@@ -15,4 +15,5 @@ To enable a encrypted network, when creating a swarm networking add the `--opt e
 
 ``` c#
 docker network create --opt encrypted --driver overlay my-secure-network
+docker network create --o encrypted --driver overlay my-secure-network
 ```

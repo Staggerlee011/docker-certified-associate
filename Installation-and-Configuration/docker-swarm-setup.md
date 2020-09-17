@@ -27,6 +27,7 @@ from a current swarm `master` run the below command and copy the output to the n
 ``` c#
 docker swarm join-token manager
 ```
+
 Example output of `join-token` below
 
 ``` c#
@@ -34,7 +35,6 @@ docker swarm join --token <token> <swarm manager private IP>:2377
 ```
 
 The output will then get an output saying the node has joined the swarm.
-
 
 ## Swarm node
 

@@ -110,5 +110,5 @@ Add the `insecure-registries` with the address of the registry you want to use
 - `https://nickjanetakis.com/blog/docker-tip-50-running-an-insecure-docker-registry`
 
 ``` c#
-DOCKER_OPTS="--insecure-registry registry.example.com
+DOCKER_OPTS="--insecure-registry registry.example.com"
 ```

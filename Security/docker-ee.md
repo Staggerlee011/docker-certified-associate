@@ -51,4 +51,3 @@ sudo apt-get update
 sudo apt-get install -y docker-ee=5:18.09.4~3-0~ubuntu-bionic
 sudo usermod -a -G docker cloud_user
 ```
-

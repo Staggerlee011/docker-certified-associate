@@ -47,12 +47,6 @@ docker swarm update --autolock=false
 ```
 
 
-
-``` c#
-
-```
-
-
 ### Working with autolock
 
 If autolock is enabled when a the docker service is restarted you will get the below message if you try and run a command without putting in the key:

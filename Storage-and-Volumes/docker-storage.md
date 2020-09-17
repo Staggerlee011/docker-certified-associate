@@ -32,13 +32,38 @@ docker container run -d -p 8011:80 --name mynginx -v todo-list:/data diamol/ch06
 
 ## read only
 
-you can mount the volume to be read only to the container
+you can mount the volume to be read only to the container either using the `-v` command or by `-mount`
 
 ``` c#
 docker run -v volume-name:/path/in/container:ro my/image
+docker run --mount source=nginx-vol,destination=/usr/share/nginx/html,readonly nginx:latest
 ```
 
-- Note the `:ro` at the end of the volume
+- Note the `:ro` for `-v`
+- Note `readonly` added for `-mount`
+
+You can confirm the attached storage is readonly via 
+
+```` c#
+docker inspect <CONTAINER_NAME>
+```
+
+``` c#
+"Mounts": [
+    {
+        "Type": "volume",
+        "Name": "nginx-vol",
+        "Source": "/var/lib/docker/volumes/nginx-vol/_data",
+        "Destination": "/usr/share/nginx/html",
+        "Driver": "local",
+        "Mode": "",
+        "RW": false,
+        "Propagation": ""
+    }
+],
+```
+
+- Note `"RW": false,` is `false`
 
 ## List Volumes
 
