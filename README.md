@@ -7,6 +7,12 @@ Study guide for the Docker Certified Associate exam
 - [Docker Certification Homepage](https://success.mirantis.com/certification)
 - [Study guide v1.3 May 2020](https://docker.cdn.prismic.io/docker/4a619747-6889-48cd-8420-60f24a6a13ac_DCA_study+Guide_v1.3.pdf)
 
+## output
+
+``` c#
+I failed the exam based on this learning suite on 17th-Sep 2020. I wont be retaking due to, to much time on subjects i wont be using (Namely docker ee / docker swarm / ucp and its features). I didnt fill out most of the kubernetes section as it was already in my head. so worth using the resources mentioned below.
+```
+
 ## Learning Resources
 
 - [Docker Deep Dive ebook on Leanpub](https://leanpub.com/dockerdeepdive)
